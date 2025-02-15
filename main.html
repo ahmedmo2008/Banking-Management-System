@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bank Account</h1>
+        <div class="input-group">
+            <label for="initialAmount">Enter Initial Amount:</label>
+            <input type="number" min="1" id="initialAmount" placeholder="Initial Balance">
+        </div>
+        <button onclick="setInitialAmount()">Set Initial Balance</button>
+
+        <div class="input-group">
+            <label for="addAmount">Enter Amount to Add to Balance:</label>
+            <input type="number" min="1" id="addAmount" placeholder="Amount to Add">
+        </div>
+        <button onclick="addMoneyToBalance()">Add Money</button>
+
+        <div class="input-group">
+            <label for="withdrawAmount">Enter Amount to Withdraw:</label>
+            <input type="number" min="1" id="withdrawAmount" placeholder="Amount">
+        </div>
+        <button onclick="processWithdrawal()">Withdraw</button>
+
+        <div class="result" id="result"></div>
+
+        <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <button class="toggle-btn" onclick="togglePurpleMode()">Toggle Purple Mode</button>
+
+        <div class="credits">
+            <p>Credits:</p>
+            <p>Ahmed</p>
+            <p>Retaj</p>
+            <p>Mazen</p>
+        </div>
+    </div>
+
+    <div id="popupNotification" class="popup-notification"></div>
+</body>
+</html>
